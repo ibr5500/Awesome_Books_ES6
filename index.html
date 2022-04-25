@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Awesome Book</title>
+</head>
+
+<body>
+    <header>
+        <h1>Awesome Books</h1>
+        <nav class="navigation">
+            <ul class="right">
+                <li class="right-list" id="closeMenu"><i class="fa-solid fa-xmark" id="closeMenuIcon"></i></li>
+                <li class="right-list"><a id="list">List</a></li>
+                <li class="right-list"><a id="add">Add new</a></li>
+                <li class="right-list"><a id="contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+        <div id="menuBar"><i class="fa-solid fa-bars" id="menuBarIcon"></i></div>
+    </header>
+    <div class="date-section"><span class="date-container"></span></div>
+    <section id="books-list" class="container">
+        <div class="books-container">
+            <h2 class="header-title">All Awesome Books</h2>
+            <div class="books"></div>
+        </div>
+    </section>
+    <section id="add-new" class='container'>
+        <div class="new-book-container">
+            <h2 class="form-title">Add a new book</h2>
+            <form class="new-book-form">
+                <input type="text" name="title" placeholder="Title" id="title" pattern="[a-zA-Z ]{1,15}" required />
+                <input type="text" name="author" placeholder="Author" id="author" pattern="[a-zA-Z ]{1,15}" required />
+                <span class="success">Book added</span>
+                <input type="submit" value="Add" id="add-book" />
+            </form>
+        </div>
+    </section>
+    <section id="contact-us" class="container">
+        <div class="contact-items">
+            <h2 class="contact-title">Contact information</h2>
+            Do you have any questions or you just want to say "Hello"?
+            <br/> You can reach out to us!
+            <div class="contact-info">
+                <ul>
+                    <li>Our e-mail: mail@mail.com</li>
+                    <li>Our phone number: 0123456789</li>
+                    <li>Our address: Streetname 22, 84503 City, Country</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <h3 class="foot-title">Copyright ...</h3>
+    </footer>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
